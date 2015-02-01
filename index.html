@@ -1,15 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <title>guillermobox.github.io</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="text-center">
-        <img src="http://www.gravatar.com/avatar/fde8fdc7df4bafbc91d4fad5ad9363d0.png?s=128" title="That's me!" class="img-circle img-thumbnail" />
-      </div>
-    </div>
-  </body>
-</html>
+---
+layout: mainpage
+---
+
+<div id="git-repos">
+
+</div>
+<script>
+
+function callme(data, status, xhr){
+	var i;
+	window.data = data;
+	for (i = 0; i < data.length; i++) {
+		var elem = data[i];
+		console.log(Mustache.render("<div>{{url}}</div>", data[i]));
+	};
+};
+
+$(document).ready( function () {
+$.ajax({
+		dataType: "json",
+		url: "https://api.github.com/users/guillermobox/repos",
+		headers: {
+			Accept: "application/vnd.github.v3+json",
+		},
+		success: callme,
+});
+});
+
+</script>
