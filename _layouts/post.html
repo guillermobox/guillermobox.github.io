@@ -4,25 +4,11 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="/base.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/script.js"> </script>
 
-<script type="text/javascript" src="script.js"> </script>
-
-<script type="text/html" id="template-github">
-<ul class="github_repolist list-group" style="overflow-y:scroll;height:360px;">
-	[[#repos]]
-	<li class="github_repo list-group-item">
-		<a class="github_link" href="[[html_url]]">[[name]]</a> <br />
-		<div class="github_description">[[description]] [[#language]](in [[language]])[[/language]]</div>
-		<div class="github_links" style="float:right;display:none;">
-			<a href="https://[[clone_url]]">http</a> / <a href="[[git_url]]">ssh</a>
-		</div>
-	</li>
-	[[/repos]]
-</ul>
-</script>
 <title>guillermobox.github.io</title>
 </head>
 <body>
@@ -48,8 +34,18 @@
 			</div>
 		</div>
 	</div>
+	<div class="post">
 	{{ content }}
-</script>
+	</div>
+
+	<div id="disqus_thread"></div>
+    	<script type="text/javascript">
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//guillermobox.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    	</script>
     
 </div>
 </body>
