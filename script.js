@@ -7,8 +7,14 @@ function callme(data, status, xhr){
       realdata.push(elem);
     }
   });
-  $("#git-repos").html(
+  $("#git-repos").append(
      Mustache.render(template, {"repos":realdata}));
+  $("li.github_repo").mouseenter( function (ev) {
+	$("div.github_links", ev.target).show();
+  });
+  $("li.github_repo").mouseleave( function (ev) {
+	$("div.github_links", ev.target).hide();
+  });
 };
 
 $(document).ready( function () {

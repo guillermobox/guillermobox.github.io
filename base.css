@@ -1,49 +1,36 @@
 .thumb-header {
-    height: 69px;
     margin-top: 162px;
 }
 .subcontent {
     background-color: #eee;
-    min-height: 300px;
     border: 1px solid #ddd;
     padding: 10px;
     padding-top: 79px;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin: 0px auto 32px auto;
+    width: 50%;
+    position:relative;
 }
 .gravatar {
     position: relative;
     left: -50%;
     top: -69px;
+    z-index:100;
 }
 
-#github {
-    margin:0px 20px 0px 20px;
-    background-color: white;
-    border-radius:5px;
+.myname {
+    font-size: 16px;
 }
 
-#github h3 {
-    cursor: pointer;
-    font-size: medium;
-    font-weight: bold;
-    background-color: #fff;
-    border-radius: 5px 5px 0px 0px;
-    border:1px solid #ddd;
-    border-bottom: 0px;
-    margin: 0px;
-    padding: 10px;
+.mylinks,.mylinks:visited,.mylinks:active,.mylinks:focus{
+    color: #555;
+    font-size: 32px;
+    text-decoration:none;
 }
 
-ul.github_repolist {
-    border:1px solid #ddd;
-    padding:0px;
-}
-
-li.github_repo {
-    background-color: white;
-    list-style: none;
-    padding: 5px 10px 5px 10px;
-    border-bottom: 1px solid #ddd;
+.mylinks:hover {
+    text-decoration:none;
+    color: #94882E;
 }
 
 a.github_link {

@@ -11,13 +11,13 @@
 <script type="text/javascript" src="script.js"> </script>
 
 <script type="text/html" id="template-github">
-<ul class="github_repolist">
+<ul class="github_repolist list-group" style="overflow-y:scroll;height:360px;">
 	[[#repos]]
-	<li class="github_repo">
+	<li class="github_repo list-group-item">
 		<a class="github_link" href="[[html_url]]">[[name]]</a> <br />
 		[[description]]
-		<div style="float:right">
-			<a href="https://[[clone_url]]">http</a> or <a href="[[git_url]]">ssh</a> clone
+		<div class="github_links" style="float:right;display:none;">
+			<a href="https://[[clone_url]]">http</a> / <a href="[[git_url]]">ssh</a>
 		</div>
 	</li>
 	[[/repos]]
@@ -26,17 +26,30 @@
 <title>guillermobox.github.io</title>
 </head>
 <body>
+<div class="visible-xs-block">Using mobile? cool!</div>
 <div class="container">
 	<div class="thumb-header">
 		<div class="text-center" style="position:relative;">
-			<div style="position:absolute;left:50%">
+			<div style="position:absolute;left:50%;height:0px;">
 				<img src="http://www.gravatar.com/avatar/fde8fdc7df4bafbc91d4fad5ad9363d0.png?s=128" title="That's me!" class="img-circle img-thumbnail gravatar" />
 			</div>
 		</div>
 		<div class="subcontent">
-			{{ content }}
+			<div style="position:absolute;top:10px;right:10px;">
+                	<a class="mylinks fa fa-github-square" href="https://github.com/guillermobox/"></a>
+                	<a class="mylinks fa fa-bitbucket-square" href="https://bitbucket.org/guillermobox/"></a>
+                	<a class="mylinks fa fa-envelope-square" href="mailto:guillermobox@gmail.com"></a>
+                	<a class="mylinks fa fa-facebook-square" href="http://www.facebook.com/profile.php?id=100002648737803"></a>
+                	<a class="mylinks fa fa-google-plus-square" href="http://plus.google.com/+GuillermoIndalecioFernández"></a>
+			</div>
+			<div style="position:absolute;top:10px;left:10px;">
+				<span class="myname">Guillermo Indalecio</span> <br />
+				Physicist, Developer<br />
+				Santiago de Compostela, Spain <br />
+			</div>
 		</div>
 	</div>
+	{{ content }}
 </div>
 </body>
 </html>
