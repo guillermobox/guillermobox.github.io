@@ -1,3 +1,11 @@
+function compare_by_time(e1, e2) {
+	if (e1.updated_at < e2.updated_at) {
+		return 1;
+	} else {
+		return -1;
+	}
+};
+
 function callme(data, status, xhr){
   var div = $("#git-repos");
   var template = $("#template-github").html();
@@ -7,6 +15,7 @@ function callme(data, status, xhr){
       realdata.push(elem);
     }
   });
+  realdata.sort(compare_by_time);
   $("#git-repos").append(
      Mustache.render(template, {"repos":realdata}));
   $("li.github_repo").mouseenter( function (ev) {

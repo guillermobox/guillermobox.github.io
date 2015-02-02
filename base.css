@@ -36,3 +36,7 @@
 a.github_link {
     font-weight: bold;
 }
+div.github_description {
+    display: inline;
+    overflow: hidden;
+}
