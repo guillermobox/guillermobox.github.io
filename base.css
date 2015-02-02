@@ -19,6 +19,7 @@
 #github {
     margin:0px 20px 0px 20px;
     background-color: white;
+    border-radius:5px;
 }
 
 #github h3 {
@@ -28,6 +29,7 @@
     background-color: #fff;
     border-radius: 5px 5px 0px 0px;
     border:1px solid #ddd;
+    border-bottom: 0px;
     margin: 0px;
     padding: 10px;
 }
