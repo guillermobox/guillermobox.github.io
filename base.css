@@ -1,0 +1,49 @@
+.thumb-header {
+    height: 69px;
+    margin-top: 162px;
+}
+.subcontent {
+    background-color: #eee;
+    min-height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-top: 79px;
+    border-radius: 5px;
+}
+.gravatar {
+    position: relative;
+    left: -50%;
+    top: -69px;
+}
+
+#github {
+    margin:0px 20px 0px 20px;
+    background-color: white;
+}
+
+#github h3 {
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    border:1px solid #ddd;
+    margin: 0px;
+    padding: 10px;
+}
+
+ul.github_repolist {
+    border:1px solid #ddd;
+    padding:0px;
+}
+
+li.github_repo {
+    background-color: white;
+    list-style: none;
+    padding: 5px 10px 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+a.github_link {
+    font-weight: bold;
+}

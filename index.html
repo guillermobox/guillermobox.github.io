@@ -2,29 +2,11 @@
 layout: mainpage
 ---
 
-<div id="git-repos">
-
+<div id="github">
+	<h3 id="github-title">Github repositories</h3>
+	<div id="git-repos">
+		<div style="padding:20px;border:1px solid #ddd;">
+		Loading content...
+		</div>
+	</div>
 </div>
-<script>
-
-function callme(data, status, xhr){
-	var i;
-	window.data = data;
-	for (i = 0; i < data.length; i++) {
-		var elem = data[i];
-		console.log(Mustache.render("<div>{{url}}</div>", data[i]));
-	};
-};
-
-$(document).ready( function () {
-$.ajax({
-		dataType: "json",
-		url: "https://api.github.com/users/guillermobox/repos",
-		headers: {
-			Accept: "application/vnd.github.v3+json",
-		},
-		success: callme,
-});
-});
-
-</script>
