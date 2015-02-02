@@ -48,6 +48,9 @@ div.post>h1{
 
 }
 
+@media (min-width:768px) {
 div.container {
 	width: 620px;
 }
+}
+

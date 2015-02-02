@@ -15,21 +15,42 @@
 </head>
 <body>
 <div class="container">
-	<div class="thumb-header">
-		<div class="text-center" style="position:relative;width:100%;">
-			<div style="position:absolute;left:50%;height:0px;">
-				<a href="/"><img src="http://www.gravatar.com/avatar/fde8fdc7df4bafbc91d4fad5ad9363d0.png?s=128" title="That's me!" class="img-circle img-thumbnail gravatar" /></a>
+	<div class="hidden-xs">
+		<div class="thumb-header">
+			<div class="text-center" style="position:relative;width:100%;">
+				<div style="position:absolute;left:50%;height:0px;">
+					<a href="/"><img src="http://www.gravatar.com/avatar/fde8fdc7df4bafbc91d4fad5ad9363d0.png?s=128" title="That's me!" class="img-circle img-thumbnail gravatar" /></a>
+				</div>
+			</div>
+			<div class="subcontent">
+				<div style="position:absolute;top:10px;right:10px;">
+					<a class="mylinks fa fa-github-square" href="https://github.com/guillermobox/"></a>
+					<a class="mylinks fa fa-bitbucket-square" href="https://bitbucket.org/guillermobox/"></a>
+					<a class="mylinks fa fa-envelope-square" href="mailto:guillermobox@gmail.com"></a>
+					<a class="mylinks fa fa-facebook-square" href="http://www.facebook.com/profile.php?id=100002648737803"></a>
+					<a class="mylinks fa fa-google-plus-square" href="http://plus.google.com/+GuillermoIndalecioFernández"></a>
+				</div>
+				<div style="position:absolute;top:10px;left:10px;">
+					<span class="myname">Guillermo Indalecio</span> <br />
+					Physicist, Developer<br />
+					Santiago de Compostela, Spain <br />
+				</div>
 			</div>
 		</div>
-		<div class="subcontent">
-			<div style="position:absolute;top:10px;right:10px;">
+	</div>
+	<div class="visible-xs">
+		<div class="subcontent" style="padding-top: 5%;text-align:center;margin-top: 5%;">
+			<div>
+				<a href="/"><img src="http://www.gravatar.com/avatar/fde8fdc7df4bafbc91d4fad5ad9363d0.png?s=128" title="That's me!" class="img-circle img-thumbnail" style="margin-bottom: 5%;" /></a>
+			</div>
+			<div>
 				<a class="mylinks fa fa-github-square" href="https://github.com/guillermobox/"></a>
 				<a class="mylinks fa fa-bitbucket-square" href="https://bitbucket.org/guillermobox/"></a>
 				<a class="mylinks fa fa-envelope-square" href="mailto:guillermobox@gmail.com"></a>
 				<a class="mylinks fa fa-facebook-square" href="http://www.facebook.com/profile.php?id=100002648737803"></a>
 				<a class="mylinks fa fa-google-plus-square" href="http://plus.google.com/+GuillermoIndalecioFernández"></a>
 			</div>
-			<div style="position:absolute;top:10px;left:10px;">
+			<div style="margin-top: 5%;">
 				<span class="myname">Guillermo Indalecio</span> <br />
 				Physicist, Developer<br />
 				Santiago de Compostela, Spain <br />
@@ -37,8 +58,6 @@
 		</div>
 	</div>
 	{{ content }}
-	</script>
-
 </div>
 </body>
 </html>
