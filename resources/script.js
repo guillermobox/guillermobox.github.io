@@ -1,37 +1,29 @@
-function compare_by_time(e1, e2) {
-	if (e1.updated_at < e2.updated_at) {
-		return 1;
-	} else {
-		return -1;
-	}
-};
 
 function render_github_error(data, status, xhr) {
-  $("#git-repos").append(
-      "<div class=\"panel-body\">Error connecting to github API</div>"
-  );
+  $("#git-repos").append("<div class=\"panel-body\">Error connecting to github API</div>");
 };
 
 function render_github_repos(data, status, xhr){
   var div = $("#git-repos");
   var template = $("#template-github").html();
-  var realdata = [];
   var regexp = /git:\/\/github\.com\/([^\/]+)\/([^\/]+)/;
-  $.each(data, function(index, elem) {
-    if (elem.fork == false) {
-      elem.git_url = elem.git_url.replace(regexp, "ssh://git@github.com:/$1/$2");
-      realdata.push(elem);
-    }
+  function compare_by_time(e1, e2) {
+    return (e1.updated_at < e2.updated_at) ? 1 : -1;
+  }
+
+  $.map(data, function (elem, index) {
+    if (elem.fork === true) return null;
+    elem.git_url = elem.git_url.replace(regexp, "ssh://git@github.com:/$1/$2");
+    return elem;
   });
-  realdata.sort(compare_by_time);
-  $("#git-repos").append(
-     Mustache.render(template, {"repos":realdata}));
-  $("li.github_repo").mouseenter( function (ev) {
-	$("div.github_links", ev.target).show();
-  });
-  $("li.github_repo").mouseleave( function (ev) {
-	$("div.github_links", ev.target).hide();
-  });
+
+  data.sort(compare_by_time);
+  div.append(Mustache.render(template, {"repos":data}));
+
+  $("li.github_repo").hover(
+      function (ev) { $("div.github_links", ev.delegateTarget).show(); },
+      function (ev) { $("div.github_links", ev.delegateTarget).hide(); }
+      );
 };
 
 $(document).ready( function () {
