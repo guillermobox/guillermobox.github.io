@@ -6,12 +6,20 @@ function compare_by_time(e1, e2) {
 	}
 };
 
-function callme(data, status, xhr){
+function render_github_error(data, status, xhr) {
+  $("#git-repos").append(
+      "<div class=\"panel-body\">Error connecting to github API</div>"
+  );
+};
+
+function render_github_repos(data, status, xhr){
   var div = $("#git-repos");
   var template = $("#template-github").html();
   var realdata = [];
+  var regexp = /git:\/\/github\.com\/([^\/]+)\/([^\/]+)/;
   $.each(data, function(index, elem) {
     if (elem.fork == false) {
+      elem.git_url = elem.git_url.replace(regexp, "ssh://git@github.com:/$1/$2");
       realdata.push(elem);
     }
   });
@@ -34,7 +42,8 @@ $(document).ready( function () {
     headers: {
       Accept: "application/vnd.github.v3+json",
     },
-    success: callme,
+    success: render_github_repos,
+    error: render_github_error,
   });
 });
 

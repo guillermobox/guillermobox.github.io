@@ -7,8 +7,7 @@
     padding: 10px;
     padding-top: 79px;
     border-radius: 10px;
-    margin: 0px auto 32px auto;
-    width: 50%;
+    margin: 0px auto 64px auto;
     position:relative;
 }
 .gravatar {
@@ -30,7 +29,7 @@
 
 .mylinks:hover {
     text-decoration:none;
-    color: #94882E;
+    color: #4183c4;
 }
 
 a.github_link {
@@ -40,10 +39,15 @@ div.github_description {
     display: inline;
     overflow: hidden;
 }
+
 div.post {
     font-size: large;
 }
 div.post>h1{
     font-size: 42px;
 
+}
+
+div.container {
+	width: 620px;
 }

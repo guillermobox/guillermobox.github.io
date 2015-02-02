@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Hello world!
+tags:
+ - Testing
+ - github
 ---
 
 Hello world!
