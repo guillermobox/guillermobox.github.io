@@ -29,8 +29,14 @@
 
 .mylinks:hover {
     text-decoration:none;
-    color: #4183c4;
 }
+
+.mylinks.fa-github-square:hover { color: #4183c4; }
+.mylinks.fa-bitbucket-square:hover { color: #205081; }
+.mylinks.fa-facebook-square:hover { color: #45619d; }
+.mylinks.fa-google-plus-square:hover { color: #dd4b39; }
+.mylinks.fa-envelope-square:hover { color: #7444BB;}
+
 
 @media (min-width:768px) {
 div.container {
