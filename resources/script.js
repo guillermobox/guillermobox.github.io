@@ -14,9 +14,10 @@ function render_github_repos(data, status, xhr){
     return (e1.updated_at < e2.updated_at) ? 1 : -1;
   }
 
-  $.map(data, function (elem, index) {
+  data = $.map(data, function (elem, index) {
     if (elem.fork === true) return null;
     elem.git_url = elem.git_url.replace(regexp, regmap);
+    elem.updated_time = moment(elem.updated_at.substr(0,10), "YYYY-MM-DD").fromNow();
     return elem;
   });
 
