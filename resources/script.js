@@ -11,13 +11,13 @@ function render_github_repos(data, status, xhr){
   var regexp = /git:\/\/github\.com\/([^\/]+)\/([^\/]+)/;
   var regmap = "ssh://git@github.com:/$1/$2/";
   function compare_by_time(e1, e2) {
-    return (e1.updated_at < e2.updated_at) ? 1 : -1;
+    return (e1.pushed_at < e2.pushed_at) ? 1 : -1;
   }
 
   data = $.map(data, function (elem, index) {
     if (elem.fork === true) return null;
     elem.git_url = elem.git_url.replace(regexp, regmap);
-    elem.updated_time = moment(elem.updated_at.substr(0,10), "YYYY-MM-DD").fromNow();
+    elem.updated_time = moment(elem.pushed_at, moment.ISO_8601).fromNow();
     return elem;
   });
 
