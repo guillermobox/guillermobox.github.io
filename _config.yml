@@ -3,7 +3,7 @@ encoding: utf-8
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: <!--more-->
 collections:
- - documents
+ - docs
 paginate: 5
 paginate_path: "blog/page:num/"
 url: http://guillermobox.github.io
