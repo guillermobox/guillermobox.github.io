@@ -3,10 +3,10 @@ layout: top
 ---
 
 {% for post in paginator.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="author">
-    <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
-  </p>
+<h2><a href="{{ post.url }}">{{ post.title }}</a> <span class="small">{{ post.date | date: "%b %-d, %Y" }}</span></h2>
+<p class="author">
+  {{ post.excerpt }}
+</p>
 {% endfor %}
 
 <nav>

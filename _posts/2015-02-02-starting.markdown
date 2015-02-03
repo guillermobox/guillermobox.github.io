@@ -11,6 +11,8 @@ some writings of mine, create some posts to share my stupid
 opinion, link my repositories with code and several articles
 from scientific journals.
 
+<!--more-->
+
 Writings posts in markdown, with a filesystem based database,
 is a dream come true. The source code of this blog, including
 the posts, css, javascript, layout and other data, is

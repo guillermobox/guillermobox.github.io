@@ -10,10 +10,11 @@ layout: mainpage
 	<ul class="list-group">
 	{% for post in site.posts limit:5 %}
 		<li class="list-group-item">
-		<h4 class="list-group-item-heading"><a href="{{post.url}}">{{post.title}}</a></h4>
+		<h4 class="list-group-item-heading"><a href="{{post.url}}">{{post.title}}</a>
+			<small>(<script>document.write(moment("{{post.date | date :"%Y-%m-%d"}}").fromNow());</script>)</small>
+		</h4>
 		<p class="list-group-item-text">
-		{{post.date | date: "%b %-d, %Y" }} 
-		(<script>document.write(moment("{{post.date | date :"%Y-%m-%d"}}").fromNow());</script>)
+		{{post.excerpt}}
 		</p>
 		</li>
 	{% endfor %}
