@@ -37,6 +37,16 @@
 .mylinks.fa-google-plus-square:hover { color: #dd4b39; }
 .mylinks.fa-envelope-square:hover { color: #7444BB;}
 
+.github_links {
+    position:absolute;
+    right: 15px;
+    display:none;
+    top: 10px;
+    padding: 0px 4px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color:#fff;
+}
 
 @media (min-width:768px) {
 div.container {
