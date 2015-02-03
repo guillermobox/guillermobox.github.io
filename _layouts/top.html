@@ -11,7 +11,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="/resources/script.js"> </script>
-<title>guillermobox.github.io</title>
+<title>{{site.url}}</title>
 </head>
 <body>
 <div class="container">
@@ -19,21 +19,21 @@
 		<div class="thumb-header">
 			<div class="text-center" style="position:relative;width:100%;">
 				<div style="position:absolute;left:50%;height:0px;">
-					<a href="/"><img src="http://www.gravatar.com/avatar/fde8fdc7df4bafbc91d4fad5ad9363d0.png?s=128" title="That's me!" class="img-circle img-thumbnail gravatar" /></a>
+					<a href="/"><img src="http://www.gravatar.com/avatar/{{site.author.gravatar}}.png?s=128&d=mm" title="That's me!" class="img-circle img-thumbnail gravatar"  style="margin-bottom: 5%;" /></a>
 				</div>
 			</div>
 			<div class="subcontent">
 				<div style="position:absolute;top:10px;right:10px;">
-					<a class="mylinks fa fa-github-square" href="https://github.com/guillermobox/"></a>
-					<a class="mylinks fa fa-bitbucket-square" href="https://bitbucket.org/guillermobox/"></a>
-					<a class="mylinks fa fa-envelope-square" href="mailto:guillermobox@gmail.com"></a>
-					<a class="mylinks fa fa-facebook-square" href="http://www.facebook.com/profile.php?id=100002648737803"></a>
-					<a class="mylinks fa fa-google-plus-square" href="http://plus.google.com/+GuillermoIndalecioFernández"></a>
+					<a class="mylinks fa fa-github-square" href="https://github.com/{{site.author.github}}/"></a>
+					<a class="mylinks fa fa-bitbucket-square" href="https://bitbucket.org/{{site.author.bitbucket}}/"></a>
+					<a class="mylinks fa fa-envelope-square" href="mailto:{{site.author.email}}"></a>
+					<a class="mylinks fa fa-facebook-square" href="http://www.facebook.com/{{site.author.facebook}}"></a>
+					<a class="mylinks fa fa-google-plus-square" href="http://plus.google.com/+{{site.author.googleplus}}"></a>
 				</div>
 				<div style="position:absolute;top:10px;left:10px;">
-					<span class="myname">Guillermo Indalecio</span> <br />
-					Physicist, Developer<br />
-					Santiago de Compostela, Spain <br />
+					<span class="myname">{{site.author.name}}</span> <br />
+					{{site.author.occupation}}<br />
+					{{site.author.location}}<br />
 				</div>
 			</div>
 		</div>
@@ -41,19 +41,20 @@
 	<div class="visible-xs">
 		<div class="subcontent" style="padding-top: 5%;text-align:center;margin-top: 5%;">
 			<div>
-				<a href="/"><img src="http://www.gravatar.com/avatar/fde8fdc7df4bafbc91d4fad5ad9363d0.png?s=128" title="That's me!" class="img-circle img-thumbnail" style="margin-bottom: 5%;" /></a>
+				<a href="/"><img src="http://www.gravatar.com/avatar/{{site.author.gravatar}}.png?s=128&d=mm" title="That's me!" class="img-circle img-thumbnail" style="margin-bottom: 5%;" /></a>
 			</div>
 			<div>
-				<a class="mylinks fa fa-github-square" href="https://github.com/guillermobox/"></a>
-				<a class="mylinks fa fa-bitbucket-square" href="https://bitbucket.org/guillermobox/"></a>
-				<a class="mylinks fa fa-envelope-square" href="mailto:guillermobox@gmail.com"></a>
-				<a class="mylinks fa fa-facebook-square" href="http://www.facebook.com/profile.php?id=100002648737803"></a>
+				<a class="mylinks fa fa-github-square" href="https://github.com/{{site.author.github}}/"></a>
+				<a class="mylinks fa fa-bitbucket-square" href="https://bitbucket.org/{{site.author.bitbucket}}/"></a>
+				<a class="mylinks fa fa-envelope-square" href="mailto:{{site.author.email}}"></a>
+				<a class="mylinks fa fa-facebook-square" href="http://www.facebook.com/{{site.author.facebook}}"></a>
+				<a class="mylinks fa fa-google-plus-square" href="http://plus.google.com/+{{site.author.googleplus}}"></a>
 				<a class="mylinks fa fa-google-plus-square" href="http://plus.google.com/+GuillermoIndalecioFernández"></a>
 			</div>
 			<div style="margin-top: 5%;">
-				<span class="myname">Guillermo Indalecio</span> <br />
-				Physicist, Developer<br />
-				Santiago de Compostela, Spain <br />
+				<span class="myname">{{site.author.name}}</span> <br />
+				{{site.author.occupation}}<br />
+				{{site.author.location}}<br />
 			</div>
 		</div>
 	</div>

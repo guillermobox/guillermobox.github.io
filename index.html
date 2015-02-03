@@ -2,6 +2,23 @@
 layout: mainpage
 ---
 
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<i class="fa fa-pencil"></i> Five last posts (<a href="/blog/">archive</a>)
+	</div>
+
+	<ul class="list-group">
+	{% for post in site.posts limit:5 %}
+		<li class="list-group-item">
+		<h4 class="list-group-item-heading"><a href="{{post.url}}">{{post.title}}</a></h4>
+		<p class="list-group-item-text">
+			{{post.date | date: "%b %-d, %Y" }}
+		</p>
+		</li>
+	{% endfor %}
+	</ul>
+</div>
+
 <div id="git-repos" class="panel panel-default">
     <div class="panel-heading"><i class="fa fa-github"></i> Github repositories (hover to see clone links)</div>
 </div>

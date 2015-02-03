@@ -1,13 +1,21 @@
 ---
 layout: post
 title: Hello world!
-tags:
- - Testing
- - github
 ---
 
-Hello world!
-============
+This is the first post in my blog.
 
-This is a testing post. It works, for sure. Yeah.
+I'm managing this by using jekyll to process the contents,
+and github pages to host the site. I'm planning to upload
+some writings of mine, create some posts to share my stupid
+opinion, link my repositories with code and several articles
+from scientific journals.
+
+Writings posts in markdown, with a filesystem based database,
+is a dream come true. The source code of this blog, including
+the posts, css, javascript, layout and other data, is
+hosted in a github
+[repository](https://github.com/guillermobox/guillermobox.github.io).
+
+
 

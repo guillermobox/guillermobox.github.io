@@ -32,25 +32,8 @@
     color: #4183c4;
 }
 
-a.github_link {
-    font-weight: bold;
-}
-div.github_description {
-    display: inline;
-    overflow: hidden;
-}
-
-div.post {
-    font-size: large;
-}
-div.post>h1{
-    font-size: 42px;
-
-}
-
 @media (min-width:768px) {
 div.container {
 	width: 620px;
 }
 }
-

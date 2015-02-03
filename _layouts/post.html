@@ -3,7 +3,14 @@ layout: top
 ---
 
 <div class="post">
-{{ content }}
+    <div class="page-header">
+        <h2>{{ page.title }}
+            <small>{{ page.date | date: "%b %-d, %Y" }}</small>
+        </h2>
+    </div>
 
-{% include disqus.html %}
+    {{ content }}
+
+    <hr />
+    {% include disqus.html %}
 </div>
