@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello world!
-image: http://ogp.me/logo.png
+image: http://pn.smugmug.com/Nature/Africa-2011/i-q2f7kcH/2/X3/IMG_0648-X3.jpg
 ---
 
 This is the first post in my blog.
