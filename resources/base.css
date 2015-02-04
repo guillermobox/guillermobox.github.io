@@ -53,7 +53,7 @@
 }
 
 .social-links>div {
-    margin: auto 10px auto 0px;
+    margin: 0px 5px;
 }
 
 @media (min-width:768px) {
