@@ -48,6 +48,14 @@
     background-color:#fff;
 }
 
+.social-links {
+    display: inline-flex;
+}
+
+.social-links>div {
+    margin: auto 10px auto 0px;
+}
+
 @media (min-width:768px) {
 div.container {
 	width: 620px;
