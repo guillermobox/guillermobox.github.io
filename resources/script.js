@@ -9,7 +9,7 @@ function render_github_repos(data, status, xhr){
   var div = $("#git-repos");
   var template = $("#template-github").html();
   var regexp = /git:\/\/github\.com\/([^\/]+)\/([^\/]+)/;
-  var regmap = "ssh://git@github.com:/$1/$2/";
+  var regmap = "ssh://git@github.com:/$1/$2";
   function compare_by_time(e1, e2) {
     return (e1.pushed_at < e2.pushed_at) ? 1 : -1;
   }
