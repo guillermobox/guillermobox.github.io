@@ -5,9 +5,8 @@ layout: top
 
 <div class="post">
     <div class="page-header">
-        <h2>{{ page.title }}
-            <small>{{ page.date | date: "%b %-d, %Y" }}</small>
-        </h2>
+        <h2><a href="{{page.url}}">{{page.title}}</a></h2>
+        {{ page.date | date: "%b %-d, %Y" }}
     </div>
 
     {{ content }}

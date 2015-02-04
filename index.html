@@ -11,7 +11,7 @@ layout: mainpage
 	{% for post in site.posts limit:5 %}
 		<li class="list-group-item">
 		<h4 class="list-group-item-heading"><a href="{{post.url}}">{{post.title}}</a>
-			<small>(<script>document.write(moment("{{post.date | date :"%Y-%m-%d"}}").fromNow());</script>)</small>
+			<small><script>document.write(moment("{{post.date | date :"%Y-%m-%d"}}").fromNow());</script></small>
 		</h4>
 		<p class="list-group-item-text">
 		{{post.excerpt}}
@@ -22,5 +22,5 @@ layout: mainpage
 </div>
 
 <div id="git-repos" class="panel panel-default">
-    <div class="panel-heading"><i class="fa fa-github"></i> Github repositories (hover to see clone and download links)</div>
+    <div class="panel-heading"><i class="fa fa-github-alt"></i> Github repositories (hover to see download and clonelinks)</div>
 </div>
