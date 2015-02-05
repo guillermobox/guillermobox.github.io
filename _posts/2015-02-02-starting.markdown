@@ -15,7 +15,7 @@ from scientific journals.
 <!--more-->
 
 Writings posts in markdown, with a filesystem based database,
-is a dream come true. The source code of this blog, including
+is a dream came true. The source code of this blog, including
 the posts, css, javascript, layout and other data, is
 hosted in a github
 [repository](https://github.com/guillermobox/guillermobox.github.io).
