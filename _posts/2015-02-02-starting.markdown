@@ -1,16 +1,14 @@
 ---
 layout: post
 title: Hello world!
-image: http://pn.smugmug.com/Nature/Africa-2011/i-q2f7kcH/2/X3/IMG_0648-X3.jpg
 ---
 
 This is the first post in my blog.
 
-I'm managing this by using jekyll to process the contents,
-and github pages to host the site. I'm planning to upload
-some writings of mine, create some posts to share my stupid
-opinion, link my repositories with code and several articles
-from scientific journals.
+I'm managing this by using jekyll to process the contents, and github pages to
+host the site. I'm planning to upload some writings of mine, create some posts
+to share my opinion, link my repositories with code and several articles from
+scientific journals. Just a homepage, as several others around the world.
 
 <!--more-->
 
@@ -20,5 +18,4 @@ the posts, css, javascript, layout and other data, is
 hosted in a github
 [repository](https://github.com/guillermobox/guillermobox.github.io).
 
-
-
+That's it, I hope to work on this in the future.
