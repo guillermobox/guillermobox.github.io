@@ -1,26 +1,19 @@
 ---
-layout: mainpage
 ---
 
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<i class="fa fa-pencil"></i> Five last posts
-	</div>
-
-	<ul class="list-group">
-	{% for post in site.posts limit:5 %}
-		<li class="list-group-item">
-		<h4 class="list-group-item-heading"><a href="{{post.url}}">{{post.title}}</a>
-			<small><script>document.write(moment("{{post.date | date :"%Y-%m-%d"}}").fromNow());</script></small>
-		</h4>
-		<p class="list-group-item-text">
-		{{post.excerpt}}
-		</p>
-		</li>
-	{% endfor %}
-	</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{site.name}}</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div style="position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);color:#aaa;font-weight:700;font-size:x-large;text-align:center;font-family:'PT Serif',Georgia,serif;">
+	<img src="http://www.gravatar.com/avatar/{{site.author.gravatar}}.png?s=256" class="img-circle" style="margin-bottom: 5%;">
+	<br />
+	I'm working on it, come back later
 </div>
+</body>
+</html>
 
-<div id="git-repos" class="panel panel-default">
-    <div class="panel-heading"><i class="fa fa-github-alt"></i> Github repositories (hover to see download and clone links)</div>
-</div>
