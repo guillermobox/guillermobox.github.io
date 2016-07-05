@@ -76,7 +76,8 @@ div.card {
 	margin-top: 20px;
 	overflow: hidden;
 	border-radius: 2px;
-	width: 400px;
+	max-width: 400px;
+	width: 90%;
 	padding: 10px;
 }
 
