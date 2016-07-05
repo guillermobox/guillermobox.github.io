@@ -2,6 +2,7 @@
 layout: document
 title: Reverse polish notation calculator
 subtitle: The last computer calculator you will ever need, bitch!
+date: 10/06/2016
 ---
 
 

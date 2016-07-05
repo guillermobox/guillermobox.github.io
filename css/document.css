@@ -67,7 +67,38 @@ nav > ul > li:hover {
 
 nav > ul > li.active {
 	color: white;
-	border-bottom: 2px solid #EEFF41;
+	border-bottom: 4px solid #EEFF41;
+}
+
+div.card {
+	background-color: white;
+	margin: 0px auto;
+	margin-top: 20px;
+	overflow: hidden;
+	border-radius: 2px;
+	width: 400px;
+	padding: 10px;
+}
+
+div.card a {
+	color: black;
+	text-decoration: none;
+}
+
+div.card > img {
+	border-radius: 2px;
+	margin: 10px auto;
+	padding: 5px;
+	border: 1px solid #cdcdcd;
+	display: block;
+}
+
+div.card > ul {
+	padding: 10px;
+}
+
+div.card > ul > li {
+	list-style-type: none;
 }
 
 div.list {
@@ -101,6 +132,9 @@ div.list > ul > li > a {
 .dim {
 	opacity: 0.6;
 }
+.smaller {
+	font-size: 0.666em;
+}
 
 div.document {
 	background-color: white;
@@ -120,19 +154,6 @@ div.document > div.content {
 @media (max-width: 900px) {
 .fullwidth {
 	width: 95%;
-}
-}
-
-@media (max-width: 700px) {
-div.document {
-	margin-top: 160px;
-}
-nav {
-	clear: both;
-	float: left;
-}
-div.document > div.content {
-	margin: 1em;
 }
 }
 

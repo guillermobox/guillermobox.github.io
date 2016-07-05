@@ -16,20 +16,25 @@
 		<div class="header">
 			<div class="content fullwidth">
 				<div class="title">
-					<a href="/">Aqu&iacute; mi foto o un debuxi&ntilde;o</a>
+					<a href="/">{{site.name}}</a>
 				</div>
 				<nav>
 					<ul>
-						<li><a href="/articles">Articles</a></li>
-						<li class="active"><a href="/docs/">Documents</a></li>
-						<li><a href="/code/">Coding</a></li>
+						<li><a href="/docs/">Documents</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 
-		<div class="document depth2 fullwidth">
-			How to navigate this thing
+		<div class="fullwidth" style="margin: 120px auto 0px auto;">
+			<div class="card depth1">
+				<img src="http://www.gravatar.com/avatar/{{site.author.gravatar}}?s=240" />
+				<ul>
+					<li style="font-size:1.6em;">{{site.author.name}}</li>
+					<li><a href="mailto:{{site.author.email}}">Email</a><li>
+					<li><a href="http://github.org/{{site.author.github}}">Github profile</a></li>
+				</ul>
+			</div>
 		</div>
 
 		</main>

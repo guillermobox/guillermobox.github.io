@@ -1,7 +1,8 @@
 timezone: Madrid/Spain
 encoding: utf-8
 collections:
- - docs
+  docs:
+    output: true
 url: http://guillermobox.github.io
 name: guillermobox @ github
 author:
