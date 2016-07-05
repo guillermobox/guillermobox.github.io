@@ -1,14 +1,9 @@
 timezone: Madrid/Spain
 encoding: utf-8
-permalink: /blog/:year/:month/:day/:title
-excerpt_separator: <!--more-->
 collections:
  - docs
-paginate: 5
-paginate_path: "blog/page:num/"
 url: http://guillermobox.github.io
-name: Guillermo Indalecio Homepage
-description: Homepage for me
+name: guillermobox @ github
 author:
  name: Guillermo Indalecio
  email: guillermobox@gmail.com
@@ -16,7 +11,6 @@ author:
  github: guillermobox
  bitbucket: guillermobox
  googleplus: GuillermoIndalecioFernández
- facebook: guillermo.indalecio
  occupation: Physicist, developer
  location: Santiago de Compostela, Spain
 

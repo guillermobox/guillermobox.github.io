@@ -28,6 +28,11 @@ div.header {
 	height: 300px;
 }
 
+div.header a {
+	color: white;
+	text-decoration: none;
+}
+
 div.header > div.content {
 	margin: 0 auto;
 }
@@ -65,6 +70,38 @@ nav > ul > li.active {
 	border-bottom: 2px solid #EEFF41;
 }
 
+div.list {
+	background-color: white;
+	margin: 0px auto;
+	margin-top: 80px;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
+div.list > ul {
+	margin: 10px 0px;
+	padding: 0px;
+}
+
+div.list > ul > li {
+	display: block;
+	list-style-type: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+div.list > ul > li:hover {
+}
+
+div.list > ul > li > a {
+	color: black;
+	text-decoration: none;
+}
+
+.dim {
+	opacity: 0.6;
+}
+
 div.document {
 	background-color: white;
 	margin: 0px auto;
@@ -73,11 +110,15 @@ div.document {
 	border-radius: 2px;
 }
 
-@media (max-width: 900px) {
-div.document {
-	width: 95%;
+div.document > div.content {
+	margin: 2em;
 }
-div.header > div.content {
+
+.fullwidth {
+}
+
+@media (max-width: 900px) {
+.fullwidth {
 	width: 95%;
 }
 }
@@ -90,28 +131,21 @@ nav {
 	clear: both;
 	float: left;
 }
+div.document > div.content {
+	margin: 1em;
+}
 }
 
 @media (min-width: 900px) {
-div.document {
-	width: 900px;
-}
-div.header > div.content {
+.fullwidth {
 	width: 900px;
 }
 }
 
 @media (min-width: 1400px) {
-div.document {
+.fullwidth {
 	width: 70%;
 }
-div.header > div.content {
-	width: 70%;
-}
-}
-
-div.document > div.content {
-	margin: 2em;
 }
 
 div.document > div.content > h1 {

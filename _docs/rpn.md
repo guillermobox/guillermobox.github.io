@@ -1,12 +1,9 @@
 ---
 layout: document
 title: Reverse polish notation calculator
+subtitle: The last computer calculator you will ever need, bitch!
 ---
 
-RPN Calculator
-==============
-
-The last computer calculator you will ever need, bitch!
 
 The orientation of this calculator is not power, but flexibility. The
 calculator is meant to be the last calculator you will ever need, in both

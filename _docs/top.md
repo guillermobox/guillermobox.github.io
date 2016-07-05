@@ -1,9 +1,7 @@
 ---
 layout: document
+title: This is markdown, testing page
 ---
-
-This is markdown
-================
 
 This is the content of the article
 
