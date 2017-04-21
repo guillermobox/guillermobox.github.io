@@ -156,6 +156,12 @@ div.document > div.content {
 .fullwidth {
 	width: 95%;
 }
+div.document > div.content {
+	margin: 1em;
+}
+div.document > div.content > h1 {
+	font-size: 1.5em;
+}
 }
 
 @media (min-width: 900px) {
