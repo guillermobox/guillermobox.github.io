@@ -16,8 +16,8 @@ the votes are positive, the partition is accepted, the coins distributed, and
 that's the happy ending. Otherwise, the pirate will be killed in a very gruesome
 and *piratesque* way, and the process is repeated now with the oldest pirate.
 
-You have to take some things in consideration: these pirates don't take
-decisions lightly, the five of them are experts on logic, they want to live,
+You have to take some things into consideration: these pirates don't take
+decisions lightly, the five of them are experts in logic, they want to live,
 they also want to maximize the coins that they will receive, and if they are in
 a situation that their vote won't have an impact on the amount of coins they
 will receive, they prefer to vote negative in order to enjoy the gruesome
