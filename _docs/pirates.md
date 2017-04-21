@@ -4,7 +4,7 @@ title: The five pirates riddle
 date: 21/04/2017
 ---
 
-Five pirates are arguing about how to share a tresaure, of 100 coins.  They have
+Five pirates are arguing about how to share a tresaure of 100 coins.  They have
 an interesting method to decide the partition that will be used to distribute
 the coints between them.
 
