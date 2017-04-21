@@ -4,9 +4,10 @@ title: The five pirates riddle
 date: 21/04/2017
 ---
 
-Five pirates are arguing about how to share a 100 coins tresaure. They have an
-interesting method to decide the partition that will be used to distribute the
-coints between them.
+Five pirates have to share a 100 coins tresaure. These are Caribbean pirates,
+not Somalian or something modern like that, so they have found the booty in an
+island or something. They will use the tradicional pirate method to decide how
+to distribute the coints between them.
 
 The method goes like this: the oldest pirate proposes a certain coin
 distribution, and inmediately all the pirates including him vote the
