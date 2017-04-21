@@ -162,6 +162,12 @@ div.document > div.content {
 div.document > div.content > h1 {
 	font-size: 1.5em;
 }
+div.document {
+	margin-top: 10px;
+}
+div.header > div.content {
+	display: none;
+}
 }
 
 @media (min-width: 900px) {
