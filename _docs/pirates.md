@@ -6,7 +6,7 @@ date: 21/04/2017
 
 Five pirates have to share a 100 coins tresaure. These are 17th century Caribbean
 pirates, so they have found the booty in an island or something. They will use
-the tradicional pirate method to decide how to distribute the coints between
+the traditional pirate method to decide how to distribute the coins between
 them.
 
 The method goes like this: the oldest pirate proposes a certain coin
