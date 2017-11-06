@@ -1,0 +1,16 @@
+---
+layout: main
+---
+
+<div class="list fullwidth depth1">
+	<ul>
+		{% for doc in site.documents %}
+		<li>
+		<a href="{{doc.url}}">{{ doc.title }}<br />
+		<div class="dim">{{ doc.date | date_to_long_string }}</div>
+		</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+</div>
