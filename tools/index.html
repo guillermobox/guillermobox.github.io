@@ -1,40 +1,58 @@
 ---
 layout: main
 ---
+<script>
+	start = function(val) {
+		if (window.w)
+			window.w.terminate();
+		window.w = new Worker('worker.js');
+		window.w.onmessage = function (e) {
+			document.getElementById("r").innerHTML = e.data;
+			document.getElementById("startstop").value = "Start";
+			document.getElementById('status').innerHTML = 'Finished';
+			window.w = undefined;
+		};
+		window.w.postMessage(['start', val]);
+		document.getElementById('status').innerHTML = 'Running';
+	};
+	stop = function () {
+		window.w.terminate();
+		document.getElementById("x").value = "";
+		document.getElementById("r").innerHTML = "";
+		document.getElementById('status').innerHTML = 'Interrupted';
+		window.w = undefined;
+	};
+	startstopfunc = function () {
+		if (window.w === undefined) {
+			var val = document.getElementById("x").value;
+
+			if (val != parseInt(val, 10) || val <= 0) {
+				document.getElementById('status').innerHTML = 'Please enter a positive integer';
+				return;
+			}
+			document.getElementById("startstop").value = "Stop";
+			start(val);
+		} else {
+			document.getElementById("startstop").value = "Start";
+			stop();
+		}
+	};
+</script>
 
 <div class="fullwidth">
 	<div style="margin:0px 20px;font-size:10pt;">
 
-<script>
-function factorize(x){
-	var input=new Number(x);
-	var i=new Number(2);
-	var cuenta=new Number(0);
-	var output=new String();
-
-	while(i<=input){
-		if(input%i==0){
-			cuenta++;
-			input=input/i;
-		}else{
-			if(cuenta!=0) output+=i+"<sup>"+cuenta+"</sup>&times;";
-			i=i+1;
-			cuenta=0;
-		}
-		if(input==1){
-			output+=i+"<sup>"+cuenta+"</sup>";
-			break;
-		}
-	}
-	document.getElementById("salida").innerHTML=output;
-}
-</script>
-
-<div class="card depth1">
-	<div class="title">Factorize a number</div>
-	<input type="text" onKeyUp="factorize(this.value)" />
-	<span id="salida" />
-</div>
-</div>
+		<div class="card depth1">
+			<div class="title">Factorize a number</div>
+			<form>
+				<input class="input" id="x" type="text" placeholder="Input x here"/>
+				<span class="output" id="r"></span>
+				<div class="row">
+					<span id="status"></span>
+					<input id="startstop" type="submit" value="Start" onclick="startstopfunc()" />
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
 

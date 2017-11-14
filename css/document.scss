@@ -143,6 +143,42 @@ div.document {
 	}
 }
 
+#startstop {
+	background-color: $secondary;
+	color: $secondarytext;
+	border: 0;
+	text-transform: uppercase;
+	float: right;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 5em;
+}
+
+input.input {
+	margin-bottom: 10px;
+	border: 0px;
+	font-size: 1.2em;
+	width: 100%;
+}
+.output {
+	margin-bottom: 10px;
+	border: 0px;
+	font-size: 1.2em;
+	width: 100%;
+	display: block;
+	height: 1.2em;
+}
+.output:empty:after {
+	content: "Result goes here";
+	color: lightgray;
+}
+.row {
+	width: 100%;
+	clear: both;
+	border-top: 1px solid gray;
+	margin-top: 10px;
+}
 /*
 .fullwidth {
 }
