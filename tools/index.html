@@ -8,7 +8,7 @@ layout: main
 		window.w = new Worker('worker.js');
 		window.w.onmessage = function (e) {
 			document.getElementById("r").innerHTML = e.data;
-			document.getElementById("startstop").value = "Start";
+			document.getElementById("startstop").value = "Go";
 			document.getElementById('status').innerHTML = 'Finished';
 			window.w = undefined;
 		};
@@ -33,7 +33,7 @@ layout: main
 			document.getElementById("startstop").value = "Stop";
 			start(val);
 		} else {
-			document.getElementById("startstop").value = "Start";
+			document.getElementById("startstop").value = "Go";
 			stop();
 		}
 	};
@@ -44,12 +44,13 @@ layout: main
 
 		<div class="card depth1">
 			<div class="title">Factorize a number</div>
-			<form>
+			<form onsubmit="return false;">
 				<input class="input" id="x" type="text" placeholder="Input x here"/>
 				<span class="output" id="r"></span>
 				<div class="row">
 					<span id="status"></span>
-					<input id="startstop" value="Start" onclick="startstopfunc()" />
+					<input id="startstop" type="button" class="noselect"
+					value="Go" onclick="startstopfunc()" />
 				</div>
 			</form>
 		</div>
