@@ -15,34 +15,40 @@ layout: main
 		window.w.postMessage(['start', val]);
 		document.getElementById('status').innerHTML = 'Running';
 	};
-	stop = function () {
-		window.w.terminate();
-		document.getElementById("x").value = "";
-		document.getElementById("r").innerHTML = "";
-		document.getElementById('status').innerHTML = 'Interrupted';
-		window.w = undefined;
-	};
-	startstopfunc = function () {
-		if (window.w === undefined) {
-			var val = document.getElementById("x").value;
+stop = function () {
+	window.w.terminate();
+	document.getElementById("x").value = "";
+	document.getElementById("r").innerHTML = "";
+	document.getElementById('status').innerHTML = 'Interrupted';
+	window.w = undefined;
+};
+startstopfunc = function () {
+	if (window.w === undefined) {
+		var val = document.getElementById("x").value;
 
-			if (val != parseInt(val, 10) || val <= 0) {
-				document.getElementById('status').innerHTML = 'Please enter a positive integer';
-		        document.getElementById("r").innerHTML = "";
-				return;
-			}
-            if (!Number.isSafeInteger(parseInt(val, 10))) {
-				document.getElementById('status').innerHTML = 'That integer is too big for javascript';
-		        document.getElementById("r").innerHTML = "";
-				return;
-            }
-			document.getElementById("startstop").value = "Stop";
-			start(val);
-		} else {
-			document.getElementById("startstop").value = "Go";
-			stop();
+		if (val != parseInt(val, 10) || val <= 0) {
+			document.getElementById('status').innerHTML = 'Please enter a positive integer';
+			document.getElementById("r").innerHTML = "";
+			return;
 		}
-	};
+		if (!Number.isSafeInteger(parseInt(val, 10))) {
+			document.getElementById('status').innerHTML = 'That integer is too big for javascript';
+			document.getElementById("r").innerHTML = "";
+			return;
+		}
+		document.getElementById("startstop").value = "Stop";
+		start(val);
+	} else {
+		document.getElementById("startstop").value = "Go";
+		stop();
+	}
+};
+function enterpressalert(e, textarea){
+	var code = (e.keyCode ? e.keyCode : e.which);
+	if(code == 13) {
+		startstopfunc();
+	}
+}
 </script>
 
 <div class="fullwidth">
@@ -51,7 +57,7 @@ layout: main
 		<div class="card depth1">
 			<div class="title">Factorize a number</div>
 			<form onsubmit="return false;">
-				<input class="input" id="x" type="text" placeholder="Input x here"/>
+				<input class="input" id="x" type="text" placeholder="Input x here" onKeyPress="enterpressalert(event, this)"/>
 				<span class="output" id="r"></span>
 				<div class="row">
 					<span id="status"></span>
