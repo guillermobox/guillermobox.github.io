@@ -8,25 +8,57 @@ onmessage = function (e) {
 }
 
 
-function factorize(x){
-  var input=new Number(x);
-  var i=new Number(2);
-  var cuenta=new Number(0);
-  var output=new String();
+function prettyShow(stack) {
+  var x, n, xnew;
+  var output = new String();
 
-  while(i<=input){
-    if(input%i==0){
-      cuenta++;
-      input=input/i;
-    }else{
-      if(cuenta!=0) output+=i+"<sup>"+cuenta+"</sup>&times;";
-      i=i+1;
-      cuenta=0;
-    }
-    if(input==1){
-      output+=i+"<sup>"+cuenta+"</sup>";
-      break;
+  x = xnew = stack.shift();
+  n = 1;
+
+  while (stack.length) {
+    xnew = stack.shift();
+
+    if (xnew == x) {
+      n += 1;
+    } else {
+      if (n != 1)
+        output += x + "<sup>" + n + "</sup>&times;";
+      else
+        output += x + "&times;";
+      x = xnew;
+      n = 1;
     }
   }
+  if (n != 1)
+    output += xnew + "<sup>" + n + "</sup>";
+  else
+    output += xnew;
+
   return output;
+}
+
+function factorize(x){
+  x = new Number(x);
+  var i=new Number(2);
+  var divisors = [];
+
+  while (x > 1) {
+    if (x%i == 0) {
+      x = x/i;
+      divisors.push(i);
+    }else{
+      i=i+1;
+      if (i * i >= x) {
+        if (i*i == x) {
+          divisors.push(i);
+          divisors.push(i);
+          break;
+        }else {
+          divisors.push(x);
+          break;
+        }
+      }
+    }
+  }
+  return prettyShow(divisors);
 }

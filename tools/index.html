@@ -28,8 +28,14 @@ layout: main
 
 			if (val != parseInt(val, 10) || val <= 0) {
 				document.getElementById('status').innerHTML = 'Please enter a positive integer';
+		        document.getElementById("r").innerHTML = "";
 				return;
 			}
+            if (!Number.isSafeInteger(parseInt(val, 10))) {
+				document.getElementById('status').innerHTML = 'That integer is too big for javascript';
+		        document.getElementById("r").innerHTML = "";
+				return;
+            }
 			document.getElementById("startstop").value = "Stop";
 			start(val);
 		} else {
