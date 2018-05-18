@@ -116,10 +116,10 @@ div#navigation {
 				&:hover {
 					background-color: transparentize(white, 0.8);
 				}
-				&.active {
+			}
+			&.active > a {
 					border-bottom: 4px solid $secondary;
 					padding-bottom: 16px;
-				}
 			}
 		}
 	}

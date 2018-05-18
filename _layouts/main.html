@@ -10,25 +10,24 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet">
 
 <script>
-window.onload = function() {
-	var elements = document.querySelectorAll("#navigation>ul>li>a");
-	for (var i = 0; i < elements.length; i++) {
-		var href = elements[i].pathname;
-		var dir = '/' + window.location.pathname.split('/')[1] + '/';
-		if (dir === '//')
-			dir = '/';
-		if (href === dir) {
-			elements[i].className += "active";
-		}
-	}
-}
+window.addEventListener('load', function(ev) {
+	var list = document.getElementById('navigationList');
+	var url = window.location.pathname.split('/')[1];
+	var query = 'li>a[href="/' + url + '/"]'
+
+	var item = list.querySelector(query).parentElement;
+
+	item.className += 'active';
+	item.scrollIntoView()
+});
 </script>
+
 </head>
 <body>
 
 <header>
 	<div id="navigation">
-		<ul>
+		<ul id="navigationList">
 			<li><a href="/">Home</a></li>
 			<li><a href="/docs/">Documents</a></li>
 			<li><a href="/tools/">Tools</a></li>
