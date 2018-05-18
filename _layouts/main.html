@@ -12,8 +12,12 @@
 <script>
 window.addEventListener('load', function(ev) {
 	var list = document.getElementById('navigationList');
-	var url = window.location.pathname.split('/')[1];
-	var query = 'li>a[href="/' + url + '/"]'
+	var url = '/' + window.location.pathname.split('/')[1] + '/';
+
+	if (url === '//')
+		url = '/';
+
+	var query = 'li>a[href="' + url + '"]'
 
 	var item = list.querySelector(query).parentElement;
 
