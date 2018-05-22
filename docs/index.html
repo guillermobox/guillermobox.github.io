@@ -2,12 +2,12 @@
 layout: main
 ---
 
-<div class="list fullwidth depth1">
-	<ul>
+<div class="list fullwidth">
+	<ul style="justify-content: center;display: flex;flex-wrap: wrap;">
 		{% for doc in site.documents %}
-		<li>
-		<a href="{{doc.url}}">{{ doc.title }}<br />
-		<div class="dim">{{ doc.date | date_to_long_string }}</div>
+		<li style="flex: 0 1 350px;" >
+		<a style="box-sizing: border-box;" href="{{doc.url}}">{{ doc.title }}<br />
+		<div style="margin-top: 0.5em;" class="dim">{{ doc.date | date_to_long_string }}</div>
 		</a>
 		</li>
 		{% endfor %}

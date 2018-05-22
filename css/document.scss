@@ -68,17 +68,16 @@ div.card {
 
 // This is for the list of documents
 div.list {
-	background-color: white;
 	margin: 20px auto;
-	width: 80%;
 	ul {
 		margin: 0px;
 		padding: 0px;
 		li{
+			margin: 2px;
+			background-color: white;
 			display: block;
 			list-style-type: none;
 			cursor: pointer;
-			border-bottom: 1px solid #ccc;
 			&:hover {
 			}
 			a{
