@@ -1,5 +1,7 @@
 timezone: Madrid/Spain
 encoding: utf-8
+sass:
+  sass_dir: css
 collections:
   docs:
     output: true
