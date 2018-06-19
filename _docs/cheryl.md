@@ -2,6 +2,7 @@
 layout: document
 title: Cheryl's birthday continuation
 date: 15/05/2018
+tag: riddle
 ---
 
 This is proposed as a continuation of the Cheryl's birthday problem,

@@ -133,6 +133,9 @@ div.document {
 			font-family: 'Roboto', sans-serif;
 			font-weight:300;
 		}
+		img {
+			max-width: 100%;
+		}
 		font-family: 'Roboto', sans-serif;
 		color: #333;
 		line-height: 1.4;
@@ -172,4 +175,24 @@ div.document {
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */
+}
+
+span.tag {
+	float: right;
+	display: block;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-size: 75%;
+	padding: 2px 5px;
+	color: white;
+	border-radius: 3px;
+}
+
+span.tag-riddle {
+	background-color: #9575CD;
+}
+
+span.tag-math {
+	background-color: #43a047;
 }

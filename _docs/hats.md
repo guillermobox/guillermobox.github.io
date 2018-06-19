@@ -2,6 +2,7 @@
 layout: document
 title: 10 hats for the prisioners
 date: 22/05/2018
+tag: riddle
 ---
 
 In a weird prison managed by mathematicians, 10 prisioners are proposed the

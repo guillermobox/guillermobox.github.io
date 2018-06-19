@@ -2,6 +2,7 @@
 layout: document
 title: The island of blue and brown eyes
 date: 24/04/2018
+tag: riddle
 ---
 
 A particular island has 200 habitants. Half of them have blue eyes, the other

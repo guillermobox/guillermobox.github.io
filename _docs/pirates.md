@@ -2,6 +2,7 @@
 layout: document
 title: The five pirates riddle
 date: 21/04/2017
+tag: riddle
 ---
 
 Five pirates have to share a 100 coins treasure. These are 17th century Caribbean

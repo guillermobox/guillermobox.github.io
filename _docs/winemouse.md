@@ -2,6 +2,7 @@
 layout: document
 title: 1000 wine bottles and a bunch of mice
 date: 07/11/2017
+tag: riddle
 ---
 
 You are preparing a party, and you have invited all your friends. Because you

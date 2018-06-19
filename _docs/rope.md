@@ -2,6 +2,7 @@
 layout: document
 title: Two one hour ropes
 date: 16/04/2018
+tag: riddle
 ---
 
 This is a short riddle/mathematical problem. You have two ropes, and a lighter.

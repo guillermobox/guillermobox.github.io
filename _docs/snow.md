@@ -2,6 +2,7 @@
 layout: document
 title: Snow plowing math problem
 date: 25/04/2018
+tag: math
 ---
 
 This math problem is from IBM ponder this, slightly modified.
