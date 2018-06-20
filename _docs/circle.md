@@ -1,6 +1,6 @@
 ---
 layout: document
-title: Random triangle in a circle
+title: A triangle problem
 date: 19/06/2018
 tag: math
 ---
