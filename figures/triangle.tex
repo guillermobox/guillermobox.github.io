@@ -1,4 +1,4 @@
-\documentclass[crop,tikz]{standalone}
+\documentclass[crop,tikz, 12pt]{standalone}
 \usepackage{tikz}
 
 \usepackage{xcolor}
@@ -25,26 +25,26 @@
 \begin{tikzpicture}
     %\draw[gray, very thin] (-3,-3) grid (3,3);
 
-    \coordinate (P) at (1.9,.8);
+    \coordinate (P) at (2.2,1.8);
     \coordinate (la) at (0,0);
-    \coordinate (lb) at (0:3);
-    \coordinate (lc) at (60:3);
+    \coordinate (lb) at (0:4);
+    \coordinate (lc) at (60:4);
     \pic [draw, angle radius=.3cm] {angle = la--P--lb};
     \pic [draw, angle radius=.3cm] {angle = lc--P--la};
 
-    \draw [spot,thick] (P) -- (0,0) node [spot,midway,anchor=south] {a};
-    \draw [spot,thick] (P) -- (0:3) node [spot,midway,anchor=south] {b};
-    \draw [spot,thick] (P) -- (60:3) node [spot,midway,anchor=east] {c};
-    \draw (0,0) -- (0:3) -- (60:3) -- (0,0);
+    \draw [spot,thick] (P) -- (la) node [spot,midway,anchor=north] {a};
+    \draw [spot,thick] (P) -- (lb) node [spot,midway,anchor=north] {b};
+    \draw [spot,thick] (P) -- (lc) node [spot,midway,anchor=east] {c};
+    \draw (la) -- (lb) -- (lc) -- (la);
     \node[anchor=north,yshift=-.3cm] at (P) {$\mathrm{\alpha}$};
     \node[anchor=east,xshift=-.3cm] at (P) {$\beta$};
     \draw (P) node {\textbullet};
 
-    \draw [->, decorate, decoration=snake] (2.8,1.3) -- (3.5,1.3);
+    \draw [->, thick, black!66, decorate, decoration=snake] (3.5,1.9) -- (6,1.9);
 
-    \coordinate (A) at (4,.2);
-    \coordinate (B) at (5, 1.5);
-    \coordinate (C) at (4.2, 2);
+    \coordinate (A) at (7, .5);
+    \coordinate (B) at (8, 1.5);
+    \coordinate (C) at (6.2, 3);
     \draw [spot,thick] (A) -- (B) node [spot, anchor=north west, midway] {c};
     \draw [spot, thick] (B) -- (C) node [spot, anchor=south, midway] {b};
     \draw [spot,thick] (C) -- (A) node [spot, anchor=east, midway] {a};
