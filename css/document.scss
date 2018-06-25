@@ -130,12 +130,13 @@ div.document {
 	.content {
 		max-width: 40em;
     	margin: 2em auto;
-		font-family: 'Roboto', sans-serif;
+		font-family: "Computer Modern Bright", sans-serif;
 		color: #333;
 		line-height: 1.4;
 		h1 {
 			font-family: 'Roboto', sans-serif;
 			font-weight:300;
+			text-align: center;
 		}
 		img {
 			max-width: 100%;
@@ -198,4 +199,36 @@ span.tag-riddle {
 
 span.tag-math {
 	background-color: #43a047;
+}
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('cmunbmr.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('cmunbbx.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('cmunbmo.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('cmunbxo.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+p {
+	font-family: "Computer Modern Bright";
 }

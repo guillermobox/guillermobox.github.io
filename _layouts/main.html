@@ -7,7 +7,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="/css/document.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	showMathMenu: false,
+	jax: ["input/TeX","output/HTML-CSS"],
+	extensions: ["tex2jax.js", "a11y/accessibility-menu.js"],
+	TeX: {
+		extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+	},
+	tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']]
+	},
+	"HTML-CSS": {
+		fonts: ["Latin-Modern"],
+	}
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js' async></script>
 
 <script>
 window.addEventListener('load', function(ev) {
