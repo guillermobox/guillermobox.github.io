@@ -18,15 +18,17 @@ Additionaly, we can also define a *complete game*, as a valid game that also fol
 
 1. For each card, all the symbols in the card can be matched with at least another card.
 2. The role of each symbol is indistinguishable.
-3. The game is the largest game possible that can be assembled with the ammount of symbols.
+3. The game is the largest game possible that can be assembled with symbols in the pool.
 
 These previous conditions might be redundant. The example provided before is also a
 complete game.
 
 Now the question is as follows: given the number of symbols per card, how many different
 symbols are required, and how many cards are produced, to construct a complete game?
+Additionaly, provide a way to construct the cards. Is the game unique?
 
-For two symbols per card, it is already shown in the example behind. For three symbols
-per card, it is required to have 7 different symbols and also 7 cards are constructed.
+The solution for two symbols per card it is already shown in the example. For three
+symbols per card, it is required to have 7 different symbols and also 7 cards are
+constructed.
 
 [1]: https://www.teacherspayteachers.com/Product/FOOD-Matching-Game-Shout-Out-Word-of-Wisdom-3-5-box-Spot-the-Match-2930989
