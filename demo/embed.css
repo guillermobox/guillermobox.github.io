@@ -1,3 +1,4 @@
+
 body {
     background-color: black;
     border: 0;
@@ -5,30 +6,38 @@ body {
     padding: 0;
 }
 div {
-    margin: auto; width: 512px;
+    margin: auto;
+    width: 100%;
+    max-width: 512px;
 }
 canvas {
-    width: 512px;
+    max-width: 512px;
+    width: 100%;
     image-rendering:pixelated;
 }
-img {
-    width: 512px;
-}
+
 #mobile_controls {
+    line-height: 0;
+    display: block;
     position: relative;
+    overflow: hidden;
+    padding: 0;
 }
 #mobile_controls img {
-    position: absolute;
-    left: 0;
-    top: 0;
     z-index: -100;
+    max-width: 512px;
+    width:100%;
+    padding: 0;
+    margin: 0;
 }
 #mobile_controls button {
     position: absolute;
     z-index: 100;
-    width: 40px;
-    height: 40px;
-    background-color:white;
-    border-radius: 20px;
+    display: block;
+    line-height: 8%;
+    width: 8%;
+    height: 20%;
+    border: 0px;
+    border-radius: 50%;
     opacity: 0;
 }
