@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>A match made in heaven</title>
-		
-		<script type="text/javascript" src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
-		<script type="text/javascript" src="nes-embed.js"></script>
-		<script>window.onload = function(){nes_load_url("nes-canvas", "ammih.nes");}</script>
-	</head>
-	<body>
-		<div style="margin: auto; width: 512px;">
-			<canvas id="nes-canvas" width="256" height="240" style="width: 512px;
-				image-rendering:pixelated;"/>
-		</div>
-	</body>
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;   user-scalable=0;" name="viewport">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>A match made in heaven</title>
+	<link rel="stylesheet" href="embed.css" />
+	<script type="text/javascript" src="jsnes.min.js"></script>
+	<script type="text/javascript" src="nes-embed.js"></script>
+	<script type="text/javascript" src="embed.js"></script>
+</head>
+
+<body>
+	<div>
+		<canvas id="nes-canvas" width="256" height="240" />
+	</div>
+
+	<div id="mobile_controls">
+		<button style="left: 405px; top: 130px;" data-controller="BUTTON_A"></button>
+		<button style="left: 340px; top: 130px;" data-controller="BUTTON_B"></button>
+		<button style="left: 65px; top: 75px;" data-controller="BUTTON_UP"></button>
+		<button style="left: 65px; top: 135px;" data-controller="BUTTON_DOWN"></button>
+		<button style="left: 30px; top: 105px;" data-controller="BUTTON_LEFT"></button>
+		<button style="left: 100px; top: 105px;" data-controller="BUTTON_RIGHT"></button>
+		<button style="left: 180px; top: 130px;" data-controller="BUTTON_SELECT"></button>
+		<button style="left: 252px; top: 130px;" data-controller="BUTTON_START"></button>
+
+		<img src="controller.png" />
+	</div>
+</body>
+
 </html>
