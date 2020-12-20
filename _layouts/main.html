@@ -2,62 +2,24 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>{{site.name}}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/normalize.css">
-<link rel="stylesheet" href="/css/document.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	showMathMenu: false,
-	jax: ["input/TeX","output/HTML-CSS"],
-	extensions: ["tex2jax.js", "a11y/accessibility-menu.js"],
-	TeX: {
-		extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
-	},
-	tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']]
-	},
-	"HTML-CSS": {
-		fonts: ["Latin-Modern"],
-	}
-});
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js' async></script>
-
-<script>
-window.addEventListener('load', function(ev) {
-	var list = document.getElementById('navigationList');
-	var url = '/' + window.location.pathname.split('/')[1] + '/';
-
-	if (url === '//')
-		url = '/';
-
-	var query = 'li>a[href="' + url + '"]'
-
-	var item = list.querySelector(query).parentElement;
-
-	item.className += 'active';
-	item.scrollIntoView()
-});
-</script>
-
+	<title>{{site.name}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/document.css">
 </head>
+
 <body>
 
-<header>
-	<div id="navigation">
-		<ul id="navigationList">
-			<li><a href="/">Home</a></li>
-			<li><a href="/docs/">Documents</a></li>
-		</ul>
-	</div>
-</header>
+	<header>
+		<a href="/">Home</a>
+	</header>
 
-<main>
-{{content}}
-</main>
+	<main>
+		{{content}}
+	</main>
 
 </body>
+
 </html>

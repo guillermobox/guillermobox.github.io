@@ -1,10 +1,9 @@
 ---
 layout: main
 ---
-
-<div class="card depth1">
-	<img src="http://www.gravatar.com/avatar/{{site.author.gravatar}}?s=240" />
-	<div style="text-align:center;margin-bottom: 20px;font-size:14pt;">
-	Guillermo Indalecio
-	</div>
-</div>
+{% for doc in site.documents reversed %}
+<p>
+	<span class="dim">{{ doc.date | date: "%Y-%m-%d" }}</span>
+	<a href="{{doc.url}}">{{ doc.title }}</a>
+</p>
+{% endfor %}
