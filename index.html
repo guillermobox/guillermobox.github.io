@@ -1,9 +1,11 @@
 ---
 layout: main
 ---
+
+<ul>
 {% for doc in site.documents reversed %}
-<p>
-	<span class="dim">{{ doc.date | date: "%Y-%m-%d" }}</span>
+<li>
 	<a href="{{doc.url}}">{{ doc.title }}</a>
-</p>
+</li>
 {% endfor %}
+</ul>

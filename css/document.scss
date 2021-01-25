@@ -11,8 +11,17 @@ body {
 	font-family: sans-serif;
 }
 
-p,ol {
+p,ol,li {
 	line-height: 1.3em;
+}
+
+a {
+	text-decoration: none;
+	color: royalblue;
+}
+
+li {
+	list-style: circle;
 }
 
 img {
@@ -25,8 +34,4 @@ img {
 
 h1 {
 	font-weight: normal;
-}
-
-.dim {
-	opacity: 0.6;
 }
