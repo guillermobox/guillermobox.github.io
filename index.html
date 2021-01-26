@@ -1,11 +1,13 @@
 ---
-layout: main
+layout: wrapper
 ---
 
-<ul>
-{% for doc in site.documents reversed %}
-<li>
-	<a href="{{doc.url}}">{{ doc.title }}</a>
-</li>
-{% endfor %}
-</ul>
+<main>
+	<ul>
+		{% for doc in site.documents reversed %}
+		<li>
+			<a href="{{doc.url}}">{{ doc.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</main>
