@@ -1,6 +1,6 @@
 ---
 title: Developing arpeen
-layout: document
+layout: arpeen
 ---
 I am documenting the development of this application. I have been thinking
 long and hard about calculators, and how they evolved with computation. I
