@@ -5,6 +5,8 @@ sass:
 collections:
   docs:
     output: true
+  arpeen:
+    output: true
 url: http://guillermobox.github.io
 name: guillermobox @ github
 author:

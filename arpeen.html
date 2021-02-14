@@ -1,0 +1,13 @@
+---
+layout: wrapper
+---
+
+<main>
+	<ul>
+		{% for doc in site.arpeen %}
+		<li>
+			<a href="{{doc.url}}">{{ doc.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</main>
