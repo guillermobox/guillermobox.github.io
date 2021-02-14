@@ -1,4 +1,5 @@
 ---
-title: Release 1
+title: Release 1: Amicable Astronaut
 layout: arpeen
 ---
+
