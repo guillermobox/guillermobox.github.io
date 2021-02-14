@@ -1,7 +1,7 @@
 ---
+title: Developing arpeen
+layout: document
 ---
-# Developing arpeen
-
 I am documenting the development of this application. I have been thinking
 long and hard about calculators, and how they evolved with computation. I
 think the calculator, as a concept, was almost eliminated, forgotten. That is

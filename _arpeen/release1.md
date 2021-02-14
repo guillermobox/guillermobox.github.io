@@ -1,3 +1,4 @@
 ---
+title: Release 1
+layout: document
 ---
-# Release 1
